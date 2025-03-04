@@ -1,0 +1,25 @@
+#chat-box{
+    width:400px;
+    height: 80px;
+    border: .05rem solid black;
+    display: flex;
+    margin: .5rem;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.details{
+
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.info{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
