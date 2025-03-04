@@ -1,0 +1,15 @@
+div{
+    border: 2px solid green;
+
+    width: 200px;
+    height: 200px;
+}
+
+.pannel-light{
+    background-color: white;
+
+}
+
+.pannel-dark{
+    background-color: darkblue;
+}

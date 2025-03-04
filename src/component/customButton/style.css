@@ -1,0 +1,35 @@
+.btn1{
+    height: 40px;
+    width: 200px;
+    background-color: #000;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn1:hover{
+    background-color: blue;
+}
+
+.btn2{
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+}
+.btn2:hover{
+    background-color: red;
+}
+
+.btn3{
+    height: 40px;
+    width: 200px;
+    background-color: blue;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn3:hover{
+    background-color: green;
+}
