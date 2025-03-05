@@ -171,13 +171,16 @@ import { UseReducer } from './Hooks/UseReducer';
 import { UseActionState } from './Hooks/UseActionState';
 import { UseCallback } from './Hooks/UseCallback';
 import UseMemo from './Hooks/UseMemo';
+import { UseTransition } from './Hooks/UseTransition';
 
 const App = () => {
   return (
     // <UseMemo/>
     // <UseCallback/>
-    <UseActionState />
+    // <UseActionState />
     // <UseReducer/>
+    <UseTransition/>
+    
   )
 }
 export default App
