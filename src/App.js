@@ -172,6 +172,8 @@ import { UseActionState } from './Hooks/UseActionState';
 import { UseCallback } from './Hooks/UseCallback';
 import UseMemo from './Hooks/UseMemo';
 import { UseTransition } from './Hooks/UseTransition';
+import { WindowApi } from './WindowApi/WindowApi';
+import { UseId } from './Hooks/UseId';
 
 const App = () => {
   return (
@@ -179,8 +181,10 @@ const App = () => {
     // <UseCallback/>
     // <UseActionState />
     // <UseReducer/>
-    <UseTransition/>
-    
+    // <UseTransition/>
+    // <WindowApi/>
+    <UseId/>
+
   )
 }
 export default App
