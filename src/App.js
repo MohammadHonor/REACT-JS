@@ -174,6 +174,7 @@ import UseMemo from './Hooks/UseMemo';
 import { UseTransition } from './Hooks/UseTransition';
 import { WindowApi } from './WindowApi/WindowApi';
 import { UseId } from './Hooks/UseId';
+import { UseImperativeHandle } from './Hooks/UseImperativeHandle';
 
 const App = () => {
   return (
@@ -183,7 +184,8 @@ const App = () => {
     // <UseReducer/>
     // <UseTransition/>
     // <WindowApi/>
-    <UseId/>
+    // <UseId/>
+    <UseImperativeHandle/>
 
   )
 }
