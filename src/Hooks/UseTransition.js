@@ -4,7 +4,6 @@ export const UseTransition = () => {
   const [count, setCount] = useState(0);
   const [isPending, startTransition] = useTransition();
   // console.log(useTransition())
-
   const handleClickButton = () => {
     startTransition(async () => {
       await new Promise((resolve,reject) => setTimeout(resolve, 5000)); 
