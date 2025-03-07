@@ -175,6 +175,7 @@ import { UseTransition } from './Hooks/UseTransition';
 import { WindowApi } from './WindowApi/WindowApi';
 import { UseId } from './Hooks/UseId';
 import { UseImperativeHandle } from './Hooks/UseImperativeHandle';
+import { UseInsertionEffect } from './Hooks/UseInsertionEffect';
 
 const App = () => {
   return (
@@ -185,7 +186,8 @@ const App = () => {
     // <UseTransition/>
     // <WindowApi/>
     // <UseId/>
-    <UseImperativeHandle/>
+    // <UseImperativeHandle/>
+    <UseInsertionEffect/>
 
   )
 }
