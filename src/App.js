@@ -176,10 +176,11 @@ import { WindowApi } from './WindowApi/WindowApi';
 import { UseId } from './Hooks/UseId';
 import { UseImperativeHandle } from './Hooks/UseImperativeHandle';
 import { UseInsertionEffect } from './Hooks/UseInsertionEffect';
+import { UseOptimistic } from './Hooks/UseOptimistic';
 
 const App = () => {
   return (
-    <UseMemo/>
+    // <UseMemo/>
     // <UseCallback/>
     // <UseActionState />
     // <UseReducer/>
@@ -188,6 +189,7 @@ const App = () => {
     // <UseId/>
     // <UseImperativeHandle/>
     // <UseInsertionEffect/>
+    <UseOptimistic/>
 
   )
 }
