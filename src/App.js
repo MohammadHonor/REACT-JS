@@ -179,7 +179,7 @@ import { UseInsertionEffect } from './Hooks/UseInsertionEffect';
 
 const App = () => {
   return (
-    // <UseMemo/>
+    <UseMemo/>
     // <UseCallback/>
     // <UseActionState />
     // <UseReducer/>
@@ -187,7 +187,7 @@ const App = () => {
     // <WindowApi/>
     // <UseId/>
     // <UseImperativeHandle/>
-    <UseInsertionEffect/>
+    // <UseInsertionEffect/>
 
   )
 }

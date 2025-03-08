@@ -1,31 +1,28 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { CreateTodoList } from '../utils/CreateTodoList';
 import { createTodo } from '../utils/CreateTodo';
 
 function UseMemo() {
 
-  const [tab, setTab] = useState('all')
-  const [isDark, setIsDark] = useState(false);
+  const [count, setCount] = useState(0);
+  const [input, setInput] = useState(0)
+  const increaseByInputValue = (v) => {
+    console.log("delay")
+    for (let i = 0; i < 1000000000; i++){ }
+    // setInput((prev)=>prev+5)
+    return input;
+  }
+  const value = useMemo(() => {
+    return increaseByInputValue(input)
+  },[input])
   return (
     <div> 
       <h1>UseMemo demonstration</h1>
-      <button onClick={()=>setTab('all')}>{"All"}</button>
-      <button onClick={()=>setTab('active')}>Active</button>
-      <button onClick={()=>setTab("completed")}>Completed</button>
-      <br />
-      <label>
-        <input type='checkbox'
-          checked={isDark}
-          onChange={(e)=>setIsDark(e.target.checked)}
-        />
-        Dark Mode
-      </label>
-      <hr />
-      <CreateTodoList
-        todos={createTodo()}
-        tab={tab}
-        theme={isDark ? 'dark':'light'}
-      />
+      <button onClick={()=>setCount((prev)=>prev+1)}>Increase</button>
+      <p>count: {count}</p>
+      <input type='number' placeholder='Enter number'
+      value={input} onChange={(e)=>setInput(e.target.value)}/>
+      <p>inputValue:{ value }</p>
     </div>
   )
 }
